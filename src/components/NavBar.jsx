@@ -1,16 +1,15 @@
 import estilos from "./nav.module.css";
 import reactLogo from "../assets/react.svg";
 import CartWidget from "./carrito";
-import { useState } from "react";
-import Saludo from "./saludo/Saludo";
 
 export default function navBar() {
-  const [texto, setTexto] = useState("");
-
   return (
     <>
       <nav className={estilos.navegador}>
-        <img className={estilos.logoReact} src={reactLogo} alt="" />
+        <div>
+          <img className={estilos.logoReact} src={reactLogo} alt="" />
+          <h1 className={estilos.nombreTienda}>Tienda Fitness</h1>
+        </div>
 
         <ul>
           <li>
@@ -36,7 +35,6 @@ export default function navBar() {
         </ul>
         <CartWidget></CartWidget>
       </nav>
-      <Saludo>{texto}</Saludo>
     </>
   );
 }

@@ -5,10 +5,8 @@ export default function CartWidget() {
   return (
     <>
       <div className={estilos.divCarrito}>
-        <a href="" rel="noreferrer">
-          <img className={estilos.carrito} src={carritoLogo} alt="" />
-        </a>
-        <p className={estilos.pCantidad}>0</p>
+        <img className={estilos.carrito} src={carritoLogo} alt="" />
+        <span className={estilos.pCantidad}>0</span>
       </div>
     </>
   );
