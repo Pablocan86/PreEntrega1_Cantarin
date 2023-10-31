@@ -9,6 +9,7 @@ function App() {
       <div className="divLista">
         <ItemListContainer producto="Lavarropas" id="1" precio="120000" />
         <ItemListContainer producto="Heladera" id="2" precio="500000" />
+        <ItemListContainer producto="TV 32 pulgadas" id="3" precio="300000" />
       </div>
     </div>
   );

@@ -2,6 +2,10 @@ import estilos from "./nav.module.css";
 import reactLogo from "../assets/react.svg";
 import CartWidget from "./carrito";
 
+const hola = () => {
+  console.log("HOLA");
+};
+
 export default function navBar() {
   return (
     <>
@@ -12,26 +16,10 @@ export default function navBar() {
         </div>
 
         <ul>
-          <li>
-            <a href="" rel="noreferrer">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="" rel="noreferrer">
-              Nosotros
-            </a>
-          </li>
-          <li>
-            <a href="" rel="noreferrer">
-              Productos
-            </a>
-          </li>
-          <li>
-            <a href="" rel="noreferrer">
-              Contacto
-            </a>
-          </li>
+          <li onClick={hola}>Home</li>
+          <li onClick={hola}>Nosotros</li>
+          <li onClick={hola}>Productos</li>
+          <li onClick={hola}>Contacto</li>
         </ul>
         <CartWidget></CartWidget>
       </nav>
