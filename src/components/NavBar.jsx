@@ -12,7 +12,7 @@ export default function navBar() {
       <nav className={estilos.navegador}>
         <div>
           <img className={estilos.logoReact} src={reactLogo} alt="" />
-          <h1 className={estilos.nombreTienda}>Tienda Fitness</h1>
+          <h1 className={estilos.nombreTienda}>Fitness Dedication</h1>
         </div>
 
         <ul>
