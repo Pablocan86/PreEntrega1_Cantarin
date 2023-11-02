@@ -1,6 +1,6 @@
 import estilos from "./nav.module.css";
 import reactLogo from "../assets/react.svg";
-import CartWidget from "./carrito";
+import CartWidget from "./CartWidget";
 
 const hola = () => {
   console.log("HOLA");
@@ -21,7 +21,7 @@ export default function navBar() {
           <li onClick={hola}>Productos</li>
           <li onClick={hola}>Contacto</li>
         </ul>
-        <CartWidget></CartWidget>
+        <CartWidget />
       </nav>
     </>
   );

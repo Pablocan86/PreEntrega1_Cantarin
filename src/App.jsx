@@ -1,15 +1,12 @@
 import "./App.css";
+import { ItemListContainer } from "./components/ItemListContainer";
 import Nav from "./components/NavBar";
-import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
-
 function App() {
   return (
     <div>
       <Nav></Nav>
       <div className="divLista">
-        <ItemListContainer producto="Lavarropas" id="1" precio="120000" />
-        <ItemListContainer producto="Heladera" id="2" precio="500000" />
-        <ItemListContainer producto="TV 32 pulgadas" id="3" precio="300000" />
+        <ItemListContainer greeting={"Bienvenidos"} />
       </div>
     </div>
   );
